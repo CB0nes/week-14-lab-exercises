@@ -2,7 +2,7 @@ name: Test
 run-name: ${{ github.actor }} is testing
 on: [push]
 jobs:
-  test insecure:
+  testInsecure:
     runs-on: ubuntu-latest
     steps:
       - name: Run npm audit
