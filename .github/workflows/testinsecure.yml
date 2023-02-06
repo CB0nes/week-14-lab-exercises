@@ -9,3 +9,10 @@ jobs:
       - name: Run npm audit
         working-directory: insecure
         run: npm i --package-lock-only; npm audit
+  testMashup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check Syntax
+        working-directory: mashup
+        run: npm install eslint ; npm run lint index.js
