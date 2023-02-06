@@ -16,3 +16,10 @@ jobs:
       - name: Check Syntax
         working-directory: mashup
         run: npm install eslint ; npm run lint index.js
+  testUnittesting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check Language thingy
+        working-directory: unittesting
+        run: npm install ; npm run test
