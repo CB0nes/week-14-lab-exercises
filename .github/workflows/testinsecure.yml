@@ -1,0 +1,8 @@
+name: Test Insecure
+run-name: ${{ github.actor }} is testing Insecure Directory
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd insecure | npm audit
