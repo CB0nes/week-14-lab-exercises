@@ -7,6 +7,15 @@ const generateHelloString = (language = "english") => {
     case "gurmukhi":
       return "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ";
       break;
+    case "italian":
+      return "Bonjourno";
+      break;
+    case "french":
+      return "Bonjour";
+      break;
+    case "german":
+      return "Guten Tag";
+      break;
     default:
       throw RangeError(`Unknown language ${language}`);
   }
