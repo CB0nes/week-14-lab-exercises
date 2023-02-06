@@ -20,7 +20,7 @@ test("returns a valid French hello", () => {
   expect(hello.generateHelloString('french')).toBe('Bonjour');
 });
 
-test("Throws on unknown languages", () => {
+test("returns a valid Bulgarian hello", () => {
   expect(hello.generateHelloString('bulgarian')).toBe('Здравейте');
 });
 

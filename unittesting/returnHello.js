@@ -16,6 +16,9 @@ const generateHelloString = (language = "english") => {
     case "german":
       return "Guten Tag";
       break;
+    case "bulgarian":
+      return "Здравейте";
+      break;
     default:
       throw RangeError(`Unknown language ${language}`);
   }
