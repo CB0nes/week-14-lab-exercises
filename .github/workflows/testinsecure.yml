@@ -5,5 +5,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: ls ${{github.workspace}}
-      - run: cd insecure | npm i --package-lock-only| npm audit
+      - run: cd ${{github.workspace}}/insecure | npm i --package-lock-only| npm audit
