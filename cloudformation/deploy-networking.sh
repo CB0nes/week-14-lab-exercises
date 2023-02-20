@@ -8,10 +8,11 @@ set -eo pipefail
 #   exit 1
 # fi
 
+readonly STUDENT_NAME="isabella-ha"
 readonly STACK_NAME="${STUDENT_NAME}-networking"
 readonly TEMPLATE_FILE="$(dirname "${BASH_SOURCE[0]}")/templates/networking.yml"
 readonly AWS_DEFAULT_REGION="eu-west-2"
-readonly STUDENT_NAME="isabella-ha"
+
 
 aws cloudformation deploy \
   --stack-name "${STACK_NAME}" \
