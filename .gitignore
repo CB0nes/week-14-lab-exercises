@@ -182,3 +182,6 @@ tags
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,visualstudiocode,node
+.gitsecret/keys/random_seed
+!*.secret
+isabella.harrod@warwick.ac.uk_accessKeys.csv
