@@ -1,0 +1,11 @@
+name: SetUpVPC
+run-name: ${{ github.actor }} is setting up VPC
+on: [push]
+jobs:
+  SetUpVPC:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run deploy netwoking script
+        working-directory: cloudformation
+        run: ./deploy-networking.sh
